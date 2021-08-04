@@ -1,0 +1,149 @@
+/*Source: https://www.codinglabweb.com/2020/12/create-website-in-html-css-only-design.html*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+::selection{
+    color: #000;
+    background: #fff;
+}
+
+nav{
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .task-bar{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.task-bar .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.task-bar ul{
+    display: inline-flex;
+}
+
+.task-bar ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+
+.task-bar ul li:first-child{
+    margin-left: 0px;
+}
+
+.task-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.task-bar ul li a:hover{
+    background: #fff;
+    color: black;
+}
+
+.img{
+    background: url('https://cdn.mos.cms.futurecdn.net/eC6Q4Civ8TurCZbYA5wNmm.jpg')no-repeat;
+}
+
+.img2{
+    background: url('https://careerswithstem.com.au/wp-content/uploads/2021/01/Should-I-study-computer-science.jpg')no-repeat;
+}
+
+.img, .img2{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::before, .img2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.centre, .body-paragraph{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.centre .welcome, .centre .sub_welcome{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.centre .btns{
+    margin-top: 20px;
+}
+
+.centre .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.centre .btns button{
+    color: #fff;
+    background: none;
+} 
+
+.centre .btns button:hover{
+    color: black;
+    background: white;
+}
+
+.body-paragraph{
+    color: white;
+}
+
+.body-paragraph .education, .body-paragraph .skills, .body-paragraph .work, .body-paragraph .motivation{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.body-paragraph .education .education_sub, .body-paragraph .skills .skills_sub, .body-paragraph .work .work_sub, .body-paragraph .motivation .motivation_sub{
+    font-size: 20px;
+}
